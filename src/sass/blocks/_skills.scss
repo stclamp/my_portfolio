@@ -1,21 +1,5 @@
 .skills{
     padding: 120px;
-    &__title{
-        text-align: center;
-        position: relative;
-        @include before_circle;
-        &:before{
-            top: -4px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        margin-top: 6px;
-    }
     &__wrapper{
         display: grid;
         padding: 60px 10px 0 10px;
@@ -66,11 +50,12 @@
             border-radius: 4px;
             margin-top: 27px;
         }
-        &-subline{
+        span{
             height: 14px;
             background: $main-color;
             border-radius: 4px;
             margin-top: 27px;
+            display: block;
         }
     }
 }

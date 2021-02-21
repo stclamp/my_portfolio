@@ -56,9 +56,9 @@
 
 <body>
   <aside class="sidepanel">
-    <a href="#" class="sidepanel__link"><i class="fab fa-facebook"></i></a>
-    <a href="#" class="sidepanel__link"><i class="fab fa-instagram"></i></a>
-    <a href="#" class="sidepanel__link"><i class="fab fa-github"></i></a>
+    <a href="#" class="sidepanel__link" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="sidepanel__link" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/stclamp" class="sidepanel__link" target="_blank"><i class="fab fa-github"></i></a>
     <div class="sidepanel__divider"></div>
     <div class="sidepanel__text"><span>Социальные сети</span></div>
   </aside>
@@ -73,16 +73,16 @@
       </div>
       <nav>
         <ul class="menu__list">
-          <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-          <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-          <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-          <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-          <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-          <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+          <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
+          <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
+          <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+          <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+          <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+          <li class="menu__link"><a href="#contact">КОНТАКТЫ</a></li>
         </ul>
       </nav>
       <div class="menu__social">
-        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/stclamp" target="_blank"><i class="fab fa-github"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-facebook"></i></a>
       </div>
@@ -104,7 +104,7 @@
       </div>
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about__wrapper">
         <div class="about__photo">
@@ -169,10 +169,10 @@
       </div>
     </div>
   </section>
-  <section class="resume">
+  <section class="resume" id="resume">
     <div class="container">
-      <h2 class="title title_fz16 resume__title">Опыт</h2>
-      <div class="title title_fz36 resume__subtitle">Чем я буду полезен</div>
+      <h2 class="title title_fz16 title__section-title">Опыт</h2>
+      <div class="title title_fz36 title__section-subtitle">Чем я буду полезен</div>
       <div class="divider"></div>
       <div class="resume__wrapper">
         <div class="resume__column">
@@ -248,10 +248,10 @@
       </div>
     </div>
   </section>
-  <section class="skills">
+  <section class="skills" id="skills">
     <div class="container">
-      <h2 class="title title_fz16 skills__title">Навыки</h2>
-      <div class="title title_fz36 skills__subtitle">Что я использую в работе</div>
+      <h2 class="title title_fz16 title__section-title">Навыки</h2>
+      <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
       <div class="divider"></div>
       <div class="skills__wrapper">
         <div class="skills__item">
@@ -302,7 +302,7 @@
             <div class="skills__percents-percent">100%</div>
           </div>
           <div class="skills__percents-line">
-            <div class="skills__percents-subline" style="width: 100%"></div>
+            <span></span>
           </div>
         </div>
         <div class="skills__percents-item">
@@ -311,27 +311,145 @@
             <div class="skills__percents-percent">75%</div>
           </div>
           <div class="skills__percents-line">
-            <div class="skills__percents-subline" style="width: 75%"></div>
+            <span></span>
           </div>
         </div>
         <div class="skills__percents-item">
           <div class="skills__percents-head">
             <div class="title title_fz14 skills__percents-title">Работа с данными</div>
-            <div class="skills__percents-percent">80%</div>
+            <div class="skills__percents-percent">85%</div>
           </div>
           <div class="skills__percents-line">
-            <div class="skills__percents-subline" style="width: 80%"></div>
+            <span></span>
           </div>
         </div>
         <div class="skills__percents-item">
           <div class="skills__percents-head">
             <div class="title title_fz14 skills__percents-title">Soft skills</div>
-            <div class="skills__percents-percent">90%</div>
+            <div class="skills__percents-percent">95%</div>
           </div>
           <div class="skills__percents-line">
-            <div class="skills__percents-subline" style="width:90%"></div>
+            <span></span>
           </div>
 
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="title title_fz16 title__section-title">Портфолио</h2>
+      <div class="title title_fz36 title__section-subtitle">Мои работы</div>
+      <div class="divider"></div>
+      <div class="portfolio__wrapper">
+        <a href="https://uber-moscow.netlify.app/" class="portfolio__item" target="_blank">
+          <img src="img/projects/uber.jpg" alt="uber">
+        </a>
+        <a href="https://run-smart.netlify.app/" class="portfolio__item" target="_blank">
+          <img src="img/projects/pulse.jpg" alt="pulse">
+        </a>
+        <a href="https://uber-eats-co.netlify.app/" class="portfolio__item big" target="_blank">
+          <img src="img/projects/uber_eats.jpg" alt="uberEats">
+        </a>
+        <a href="https://github.com/stclamp/my_portfolio" class="portfolio__item vertical" target="_blank">
+          <img src="img/projects/plans.jpg" alt="plans">
+        </a>
+        <a href="https://restaurants-bd.netlify.app/" class="portfolio__item big" target="_blank">
+          <img src="img/projects/restaurants.png" alt="restaurants">
+        </a>
+        <a href="https://github.com/stclamp/my_portfolio" class="portfolio__item horizonal" target="_blank">
+          <img src="img/projects/mac.jpg" alt="mac">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="price" id="price">
+    <div class="container">
+      <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
+      <div class="divider"></div>
+      <div class="price__wrapper">
+        <div class="price__item">
+          <div class="price__item-head">
+            <div class="price__item-title">Landing-page</div>
+            <div class="price__item-price">от 8000 руб.</div>
+          </div>
+          <div class="price__item-descr">
+            Одностраничный сайт для презентации услуг/товаров/...
+          </div>
+        </div>
+        <div class="price__item">
+          <div class="price__item-head">
+            <div class="price__item-title">Web-приложение</div>
+            <div class="price__item-price">от 28000 руб.</div>
+          </div>
+          <div class="price__item-descr">
+            Приложение внутри браузера для лучшего комфорта
+          </div>
+        </div>
+        <div class="price__item">
+          <div class="price__item-head">
+            <div class="price__item-title">Корпоративный сайт</div>
+            <div class="price__item-price">от 20000 руб.</div>
+          </div>
+          <div class="price__item-descr">
+            Сайт для вашего бизнеса или компании
+          </div>
+        </div>
+        <div class="price__item">
+          <div class="price__item-head">
+            <div class="price__item-title">Интернет-магазин</div>
+            <div class="price__item-price">от 30000 руб.</div>
+          </div>
+          <div class="price__item-descr">
+            Одностраничный сайт для презентации услуг/товаров/...
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__wrapper">
+        <div class="contact__photo">
+          <img src="img/about/spider_man.jpg" alt="photo">
+        </div>
+        <div class="contact__descr">
+          <h2 class="title title_fz16 contact__title">Контакты</h2>
+          <div class="contact__subtitle title title_fz36">Свяжитесь со мной</div>
+          <div class="divider"></div>
+          <div class="title title_fz14 contact__text">
+            Любым удобным для вас способом:
+          </div>
+          <div class="contact__social">
+            <a href="#" class="contact__link">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#" class="contact__link">
+              <i class="fab fa-telegram"></i>
+
+            </a>
+            <a href="#" class="contact__link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="title title_fz14 contact__text">
+            Или оставьте ваши данные и я сам Вам напишу:
+          </div>
+          <form action="#" class="contact__form">
+            <div class="contact__input">
+              <input type="text" name="name" id="name" placeholder="Ваше имя">
+              <label for="name">Ваше имя</label>
+            </div>
+            <div class="contact__input">
+              <input type="email" name="email" id="email" placeholder="Ваша почта">
+              <label for="email">Ваша почта</label>
+            </div>
+            <div class="contact__textarea">
+              <textarea name="text" id="text"></textarea>
+              <label for="text">Ваше сообщение</label>
+            </div>
+            <button class="btn">Отправить сообщение</button>
+          </form>
         </div>
       </div>
     </div>
