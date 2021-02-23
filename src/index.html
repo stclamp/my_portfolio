@@ -56,8 +56,10 @@
 
 <body>
   <aside class="sidepanel">
-    <a href="#" class="sidepanel__link" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="#" class="sidepanel__link" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com/evtushenko.pavel1993" class="sidepanel__link" target="_blank"><i
+        class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/evtushenko__pavel/" class="sidepanel__link" target="_blank"><i
+        class="fab fa-instagram"></i></a>
     <a href="https://github.com/stclamp" class="sidepanel__link" target="_blank"><i class="fab fa-github"></i></a>
     <div class="sidepanel__divider"></div>
     <div class="sidepanel__text"><span>Социальные сети</span></div>
@@ -73,9 +75,9 @@
       </div>
       <nav>
         <ul class="menu__list">
-          <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
-          <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
-          <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+          <li class="menu__link"><a href="#about" class="menu__a">ПРО МЕНЯ</a></li>
+          <li class="menu__link"><a href="#resume" class="menu__a">МОЙ ОПЫТ</a></li>
+          <li class="menu__link"><a href="#skills" class="menu__a">МОИ НАВЫКИ</a></li>
           <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
           <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
           <li class="menu__link"><a href="#contact">КОНТАКТЫ</a></li>
@@ -83,8 +85,8 @@
       </nav>
       <div class="menu__social">
         <a href="https://github.com/stclamp" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/evtushenko__pavel/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/evtushenko.pavel1993"><i class="fab fa-facebook"></i></a>
       </div>
     </div>
     <div class="menu__overlay"></div>
@@ -99,8 +101,8 @@
       <div class="title title_fz16 promo__subtitle">Меня зовут Павел Евтушенко</div>
       <h1 class="title title_fz48 promo__title">Я web-разработчик из города Покровск</h1>
       <div class="promo__buttons">
-        <a href="#" class="promo__link btn">Портфолио</a>
-        <a href="#" class="promo__link">Про меня</a>
+        <a href="#portfolio" class="promo__link btn">Портфолио</a>
+        <a href="#about" class="promo__link">Про меня</a>
       </div>
     </div>
   </section>
@@ -421,39 +423,48 @@
             Любым удобным для вас способом:
           </div>
           <div class="contact__social">
-            <a href="#" class="contact__link">
+            <a href="https://facebook.com/evtushenko.pavel1993" class="contact__link" target="_blank">
               <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="#" class="contact__link">
+            <a href="https://t.me/stclamp" class="contact__link" target="_blank">
               <i class="fab fa-telegram"></i>
 
             </a>
-            <a href="#" class="contact__link">
+            <a href="https://www.instagram.com/evtushenko__pavel/" class="contact__link" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
           <div class="title title_fz14 contact__text">
             Или оставьте ваши данные и я сам Вам напишу:
           </div>
-          <form action="#" class="contact__form">
+          <form action="mailer/smart.php" class="contact__form">
             <div class="contact__input">
-              <input type="text" name="name" id="name" placeholder="Ваше имя">
+              <input type="text" name="name" id="name">
               <label for="name">Ваше имя</label>
             </div>
             <div class="contact__input">
-              <input type="email" name="email" id="email" placeholder="Ваша почта">
+              <input type="email" name="email" id="email">
               <label for="email">Ваша почта</label>
             </div>
             <div class="contact__textarea">
               <textarea name="text" id="text"></textarea>
               <label for="text">Ваше сообщение</label>
             </div>
-            <button class="btn">Отправить сообщение</button>
+            <div class="contact__triggers">
+              <button class="contact__btn btn">Отправить сообщение</button>
+              <div class="contact__policy">
+                <input required type="checkbox">
+                <span>Я согласен(а) с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></span>
+              </div>
+            </div>
           </form>
         </div>
       </div>
     </div>
   </section>
+  <a href="#" class="arrow_up" hidden>
+    <i class="fas fa-arrow-circle-up"></i>
+  </a>
   <script src=" js/script.js">
   </script>
 </body>
