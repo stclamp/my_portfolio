@@ -14,6 +14,7 @@
         img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -73,7 +74,6 @@
             display: block;
             top: -8px;
             left: 12px;
-<<<<<<< HEAD
         }
     }
 
@@ -123,8 +123,6 @@
         align-items: center;
         input {
             margin-right: 10px;
-=======
->>>>>>> 57d824225cb5f11fe75a45c6906d1e20cce0f4c5
         }
     }
 
